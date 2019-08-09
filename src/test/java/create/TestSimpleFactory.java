@@ -1,3 +1,5 @@
+package create;
+
 import create.simplefactory.Factory;
 import create.simplefactory.Fish;
 import org.junit.Test;
