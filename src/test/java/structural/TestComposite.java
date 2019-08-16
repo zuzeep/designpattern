@@ -27,6 +27,12 @@ public class TestComposite {
         root.addChild(lib);
         root.addChild(tmp);
 
+        Component guava = new EndFile("guava.jar");
+        Component cglib = new EndFile("cglib.jar");
+
+        lib.addChild(guava);
+        lib.addChild(cglib);
+
         Component test = new EndFile("test.txt");
         Component export = new EndFile("export.csv");
 
