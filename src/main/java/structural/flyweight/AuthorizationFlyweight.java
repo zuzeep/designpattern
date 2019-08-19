@@ -1,11 +1,11 @@
 package structural.flyweight;
 
-public class AuthroizationFlyweight implements Flyweight{
+public class AuthorizationFlyweight implements Flyweight{
 
     private String securityEntity;
     private String permit;
 
-    public AuthroizationFlyweight(String state){
+    public AuthorizationFlyweight(String state){
         String[] split = state.split(",");
         this.securityEntity = split[0];
         this.permit = split[1];
