@@ -20,7 +20,7 @@ public class FlyweightFactory {
         Flyweight flyweight;
 
         if(!flyweightMap.containsKey(state)){
-            flyweight = new AuthroizationFlyweight(state);
+            flyweight = new AuthorizationFlyweight(state);
             flyweightMap.put(state, flyweight);
         }else{
             flyweight = this.getFlyweight(state);
