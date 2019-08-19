@@ -21,5 +21,12 @@ public class TestFlyweight {
         boolean permitM2 = manager.hasPermit("m1","modify","wage");
 
         logger.info("{},{},{},{}",permitE1,permitE2,permitM1,permitM2);
+
+        for(String user: "e1,e2,m1".split(",")){
+            logger.info("user ----- {}",user);
+            for(Object obj : manager.getPermits(user)){
+                logger.info(obj.toString());
+            }
+        }
     }
 }

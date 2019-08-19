@@ -44,4 +44,8 @@ public class FlyweightSecurityManager {
 
         return false;
     }
+
+    public List<Object> getPermits(String user){
+        return new ArrayList<>(maps.get(user));
+    }
 }
