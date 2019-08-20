@@ -6,6 +6,9 @@ import org.slf4j.LoggerFactory;
 import structural.flyweight.FlyweightSecurityManager;
 import structural.flyweight.TempDB;
 
+/**
+ * TODO 应该如何实现授权对象计数和回收？
+ */
 public class TestFlyweight {
 
     private final static Logger logger = LoggerFactory.getLogger(TestFlyweight.class);
