@@ -16,6 +16,9 @@ public class TestStrategy {
 
     private final static Logger logger = LoggerFactory.getLogger(TestStrategy.class);
 
+    /**
+     * 模板模式应该更适合
+     */
     @Test
     public void testStrategy(){
         List<Double> list = Lists.newArrayList(10.0,7.4,0.0,5.1);
