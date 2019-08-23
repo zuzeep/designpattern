@@ -1,6 +1,6 @@
 package structural.decorator;
 
-public interface Compenent {
+public interface Component {
 
     Double calcPrize(String user);
 }

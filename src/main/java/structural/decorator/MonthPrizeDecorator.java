@@ -2,8 +2,8 @@ package structural.decorator;
 
 public class MonthPrizeDecorator extends Decorator{
 
-    public MonthPrizeDecorator(Compenent compenent) {
-        super(compenent);
+    public MonthPrizeDecorator(Component component) {
+        super(component);
     }
 
     @Override

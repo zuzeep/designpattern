@@ -2,8 +2,8 @@ package structural.decorator;
 
 public class SumPrizeDecorator extends Decorator{
 
-    public SumPrizeDecorator(Compenent compenent) {
-        super(compenent);
+    public SumPrizeDecorator(Component component) {
+        super(component);
     }
 
     @Override

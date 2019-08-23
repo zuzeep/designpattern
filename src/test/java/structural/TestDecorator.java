@@ -11,11 +11,11 @@ public class TestDecorator {
 
     @Test
     public void testDecorator(){
-        Compenent base = new BaseCompenent();
+        Component base = new BaseComponent();
 
-        Compenent month = new MonthPrizeDecorator(base);
-        Compenent sum = new SumPrizeDecorator(month);
-        Compenent group = new GroupPrizeDecorator(sum);
+        Component month = new MonthPrizeDecorator(base);
+        Component sum = new SumPrizeDecorator(month);
+        Component group = new GroupPrizeDecorator(sum);
 
         logger.info("user: {} , prize: {}","e1",sum.calcPrize("e1"));
         logger.info("user: {} , prize: {}","e2",sum.calcPrize("e2"));

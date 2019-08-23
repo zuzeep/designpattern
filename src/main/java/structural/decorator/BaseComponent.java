@@ -1,6 +1,6 @@
 package structural.decorator;
 
-public class BaseCompenent implements Compenent{
+public class BaseComponent implements Component {
     @Override
     public Double calcPrize(String user) {
         return 0.0;

@@ -1,15 +1,15 @@
 package structural.decorator;
 
-public class Decorator implements Compenent{
+public class Decorator implements Component {
 
-    private Compenent compenent;
+    private Component component;
 
-    public Decorator(Compenent compenent){
-        this.compenent = compenent;
+    public Decorator(Component component){
+        this.component = component;
     }
 
     @Override
     public Double calcPrize(String user) {
-        return compenent.calcPrize(user);
+        return component.calcPrize(user);
     }
 }
