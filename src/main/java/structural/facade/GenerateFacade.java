@@ -19,7 +19,7 @@ public class GenerateFacade {
 
         for(Generate generate: generates){
             generate.generate();
-            manager.destory(generate);
+            manager.destroy(generate);
         }
     }
 }

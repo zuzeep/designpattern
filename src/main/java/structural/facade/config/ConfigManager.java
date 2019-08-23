@@ -43,7 +43,7 @@ public class ConfigManager {
      * 对象管理器都应该配备一个销毁
      * @param generate
      */
-    public void destory(Generate generate){
+    public void destroy(Generate generate){
         generate.close();
         generateRegisters.remove(generate);
     }
