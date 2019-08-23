@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root id="root">
+    <a>
+        <b>
+            <c name="name_c">123</c>
+            <d>a</d>
+            <d>b</d>
+            <d>c</d>
+        </b>
+    </a>
+</root>
