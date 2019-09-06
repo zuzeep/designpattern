@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -25,7 +24,7 @@ public class SubSet {
      */
     @Test
     public void getSubSet(){
-        Set<Integer> source = Sets.newHashSet(0,1,2,3);
+        Set<Integer> source = Sets.newHashSet(0,1,2);
         subSet(source).stream().forEach(s -> log.info(Joiner.on(",").join(s)));
     }
 
