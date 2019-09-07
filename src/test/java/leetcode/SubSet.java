@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -24,22 +25,21 @@ public class SubSet {
      */
     @Test
     public void getSubSet(){
-        Set<Integer> source = Sets.newHashSet(0,1,2);
-        subSet(source).stream().forEach(s -> log.info(Joiner.on(",").join(s)));
+        int[] source = new int[]{0,1,2};
+        subsets(source).stream().forEach(s -> log.info(Joiner.on(",").join(s)));
     }
 
-    private List<Set<Integer>> subSet(Set<Integer> source){
-        if(source == null || source.isEmpty()){
+    private List<List<Integer>> subsets(int[] nums){
+        if(nums == null || nums.length == 0){
             return Collections.emptyList();
         }else {
-            List<Set<Integer>> results = Lists.newArrayList();
-            List<Integer> sou = Lists.newArrayList(source);
-            for(int i=0; i <Math.pow(2, source.size()); i++){
-                Set<Integer> sub = Sets.newHashSet();
+            List<List<Integer>> results = new ArrayList<>();
+            for(int i=0; i <Math.pow(2, nums.length); i++){
+                List<Integer> sub = new ArrayList<>();
                 int index = i;
-                for(int j=0; j<source.size(); j++){
+                for(int j=0; j<nums.length; j++){
                     if((index & 1) == 1){
-                        sub.add(sou.get(j));
+                        sub.add(nums[j]);
                     }
                     index >>= 1;
                 }
